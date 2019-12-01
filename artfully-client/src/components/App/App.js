@@ -1,13 +1,25 @@
 import React from 'react';
 import './App.scss';
-import logo from '../../assets/images/logo.png';
+import Leaderboard from '../Leaderboard/Leaderboard';
 
-function App() {
-  return (
-    <div className="App">
-      <img src={logo} alt=""/>
-    </div>
-  );
+class App extends React.Component {
+
+  render() { 
+    return (
+      <div className="app">
+      <Leaderboard />
+      {/* <BrowserRouter>
+        <Switch>
+          <Route exact path="/" component={} />
+          <Route path="" component={} />
+          <Route path="" component={} />
+
+          <Route path="" component={} />
+        </Switch>
+      </BrowserRouter> */}
+      </div>
+    )
+  }
 }
 
 export default App;

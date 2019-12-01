@@ -8,7 +8,7 @@ server.use(cors());
 //decode the POST from the client
 server.use(express.json());
 
-
+//routes
 
 
 const port = process.env.PORT || 8080;

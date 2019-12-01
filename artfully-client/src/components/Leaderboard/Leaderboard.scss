@@ -1,0 +1,25 @@
+@import '../../palette.scss';
+@import '../../mixins.scss';
+
+.leaderboard {
+
+
+  &__logo {
+    width: 240px;
+    padding: 20px;
+  }
+
+  &__title {
+    text-align: center;
+  }
+
+  &__pictures {
+
+
+    @include tablet() {
+      display: flex;
+      justify-content: space-around;
+      align-items: flex-end;
+    }
+  }
+}

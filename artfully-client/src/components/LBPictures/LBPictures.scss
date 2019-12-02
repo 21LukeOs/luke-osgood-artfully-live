@@ -7,10 +7,10 @@
 }
 
 .ldr-brd-pic {
-  padding: 20px;
+  padding: 60px;
 
   @include tablet() {
-
+    padding: 20px;
     max-width: 30%;
   }
 

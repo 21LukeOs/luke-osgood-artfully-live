@@ -1,7 +1,9 @@
 const express = require('express');
 const cors = require('cors');
+const server = express();
 
-const app = express();
+const galleryRoute = require('./routers/gallery');
+const leaderboard = require('./routers/leaderboard');
 
 //middleware
 server.use(cors());
@@ -9,7 +11,8 @@ server.use(cors());
 server.use(express.json());
 
 //routes
-
+server.use('/', leaderboard)
+server.use('/gallery', galleryRoute)
 
 const port = process.env.PORT || 8080;
 server.listen(port, () => {

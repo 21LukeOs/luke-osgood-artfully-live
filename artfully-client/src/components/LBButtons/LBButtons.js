@@ -6,9 +6,9 @@ class LBButtons extends React.Component {
 
   render() { 
     return (
-      <div>
-        
-      </div>
+      <button className="button">
+        <span className="button__text">{this.props.text}</span>
+      </button>
     );
   }
 }

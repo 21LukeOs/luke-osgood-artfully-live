@@ -1,8 +1,13 @@
 @import '../../palette.scss';
+@import '../../mixins.scss';
 
 .app {
   width: 100%;
   height: 100%;
   background-color: $color1;
   padding-bottom: 50px;
+
+  @include desktop() {
+    padding: 0 180px 80px 180px;
+  }
 }

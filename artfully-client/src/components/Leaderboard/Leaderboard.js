@@ -3,9 +3,6 @@ import './Leaderboard.scss';
 import axios from 'axios';
 import Logo from '../Logo/Logo';
 import PageTitle from '../PageTitle/PageTitle';
-// import pic4 from '../../assets/images/seaside-highway-night.jpg';
-// import pic5 from '../../assets/images/thunder-lightning.jpg';
-// import pic6 from '../../assets/images/winter-highway.jpg';
 import LBPictures from '../LBPictures/LBPictures';
 import LBButtons from '../LBButtons/LBButtons';
 
@@ -20,6 +17,15 @@ class Leaderboard extends React.Component {
 
 
   componentDidMount() {
+    const url = `http://localhost:8080/`;
+    axios.get(url).then((response) => {
+      this.setState({
+        pictures: response.data
+      });
+    });
+  }
+
+  componentDidUpdate() {
     const url = `http://localhost:8080/`;
     axios.get(url).then((response) => {
       this.setState({

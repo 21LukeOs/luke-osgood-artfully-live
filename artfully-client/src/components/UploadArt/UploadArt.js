@@ -8,7 +8,7 @@ import LBButtons from '../LBButtons/LBButtons';
 
 
 
-class Leaderboard extends React.Component {
+class UploadArt extends React.Component {
 
 
   render() { 
@@ -24,7 +24,7 @@ class Leaderboard extends React.Component {
 
         </div>
         <div className="post__nav">
-          <Link to="/" className="post__leaderboard">
+          <Link to="/leaderboard" className="post__leaderboard">
             <LBButtons text="LEADERBOARD" />
           </Link>
           <Link to="/gallery" className="leaderboard__vote">
@@ -36,4 +36,4 @@ class Leaderboard extends React.Component {
   }
 }
 
-export default Leaderboard;
+export default UploadArt;

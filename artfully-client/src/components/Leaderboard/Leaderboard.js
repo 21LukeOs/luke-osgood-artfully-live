@@ -4,7 +4,7 @@ import axios from 'axios';
 import { Link } from 'react-router-dom';
 import Logo from '../Logo/Logo';
 import PageTitle from '../PageTitle/PageTitle';
-import LBPictures from '../LBPictures/LBPictures';
+import CardPictures from '../CardPictures/CardPictures';
 import LBButtons from '../LBButtons/LBButtons';
 
 
@@ -27,7 +27,7 @@ class Leaderboard extends React.Component {
   
   displayLeaders = () => {
     return this.state.pictures.map((picture) => {
-      return <LBPictures {...picture} key={picture.id + picture.title} />
+      return <div className="leaderboard__picture"><CardPictures {...picture} key={picture.id + picture.title} class={"card-pic__img1"} /></div>
     })
   }
 

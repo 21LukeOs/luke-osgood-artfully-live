@@ -13,6 +13,13 @@
     text-align: center;
   }
 
+  &__picture {
+
+    @include tablet() {
+      max-width: 30%;
+    }
+  }
+
   &__pictures {
 
 

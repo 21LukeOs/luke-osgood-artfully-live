@@ -4,7 +4,7 @@ import axios from 'axios';
 import { Link } from 'react-router-dom';
 import Logo from '../Logo/Logo';
 import PageTitle from '../PageTitle/PageTitle';
-import GalleryPictures from '../GalleryPictures/GalleryPictures';
+import CardPictures from '../CardPictures/CardPictures';
 import LBButtons from '../LBButtons/LBButtons';
 
 class Gallery extends React.Component {
@@ -25,7 +25,7 @@ class Gallery extends React.Component {
   
   displayGallery = () => {
     return this.state.pictures.map((picture) => {
-      return <GalleryPictures {...picture} key={picture.id + picture.title} />
+      return <div className="gallery__picture"><CardPictures {...picture} key={picture.id + picture.title} class={"card-pic__img"} /></div>
     })
   }
 
@@ -42,7 +42,7 @@ class Gallery extends React.Component {
           {this.displayGallery()}
         </div>
         <div className="gallery__nav">
-          <Link to="/" className="gallery__leaderboard">
+          <Link to="/leaderboard" className="gallery__leaderboard">
             <LBButtons text="LEADERBOARD" />
           </Link>
         </div>

@@ -1,22 +1,23 @@
 import React from 'react';
 import './App.scss';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import Leaderboard from '../Leaderboard/Leaderboard';
+import Gallery from '../Gallery/Gallery';
+import UploadArt from '../UploadArt/UploadArt';
+
 
 class App extends React.Component {
 
   render() { 
     return (
       <div className="app">
-      <Leaderboard />
-      {/* <BrowserRouter>
+      <BrowserRouter>
         <Switch>
-          <Route exact path="/" component={} />
-          <Route path="" component={} />
-          <Route path="" component={} />
-
-          <Route path="" component={} />
+          <Route exact path="/" component={Leaderboard} />
+          <Route path="/gallery" component={Gallery} />
+          <Route path="/post" component={UploadArt} />
         </Switch>
-      </BrowserRouter> */}
+      </BrowserRouter>
       </div>
     )
   }

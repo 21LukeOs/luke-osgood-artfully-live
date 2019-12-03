@@ -1,0 +1,44 @@
+@import '../../palette.scss';
+@import '../../mixins.scss';
+
+.gallery {
+
+
+  &__logo {
+    width: 240px;
+    padding: 20px;
+  }
+
+  &__title {
+    text-align: center;
+  }
+
+  &__pictures {
+
+
+    @include tablet() {
+      display: flex;
+      justify-content: space-around;
+      align-items: flex-end;
+      flex-wrap: wrap;
+    }
+  }
+
+  &__nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__nav > div {
+    width: 80%;
+    text-align: center;
+    margin-top: 50px;
+  }
+
+  &__leaderboard {
+    width: 80%;
+    margin-top: 50px;
+  }
+}
+

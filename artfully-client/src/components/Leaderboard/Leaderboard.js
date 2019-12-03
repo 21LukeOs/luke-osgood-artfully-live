@@ -1,11 +1,11 @@
 import React from 'react';
 import './Leaderboard.scss';
 import axios from 'axios';
+import { Link } from 'react-router-dom';
 import Logo from '../Logo/Logo';
 import PageTitle from '../PageTitle/PageTitle';
 import LBPictures from '../LBPictures/LBPictures';
 import LBButtons from '../LBButtons/LBButtons';
-
 
 
 
@@ -17,15 +17,6 @@ class Leaderboard extends React.Component {
 
 
   componentDidMount() {
-    const url = `http://localhost:8080/`;
-    axios.get(url).then((response) => {
-      this.setState({
-        pictures: response.data
-      });
-    });
-  }
-
-  componentDidUpdate() {
     const url = `http://localhost:8080/`;
     axios.get(url).then((response) => {
       this.setState({
@@ -53,12 +44,12 @@ class Leaderboard extends React.Component {
           {this.displayLeaders()}
         </div>
         <div className="leaderboard__nav">
-          <div className="leaderboard__post">
+          <Link to="/post" className="leaderboard__post">
             <LBButtons text="POST" />
-          </div>
-          <div className="leaderboard__vote">
+          </Link>
+          <Link to="/gallery" className="leaderboard__vote">
             <LBButtons text="VOTE" />
-          </div>
+          </Link>
         </div>
       </div>
     );

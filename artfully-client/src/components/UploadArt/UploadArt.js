@@ -1,6 +1,6 @@
 import React from 'react';
 import './UploadArt.scss';
-import axios from 'axios';
+// import axios from 'axios';
 import { Link } from 'react-router-dom';
 import Logo from '../Logo/Logo';
 import PageTitle from '../PageTitle/PageTitle';

@@ -11,4 +11,11 @@ router.get('/', (req, res) => {
   res.send(highToLow)
 })
 
+router.put('/:id', (req, res) => {
+  const galleryItem = galleryData.find(gI => gI.id === req.params.id)
+  let count = ++galleryItem.votes
+  galleryItem.votes = count;
+  res.send(galleryItem);
+})
+
 module.exports = router

@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import Logo from '../Logo/Logo';
 import PageTitle from '../PageTitle/PageTitle';
 import CardPictures from '../CardPictures/CardPictures';
-import LBButtons from '../LBButtons/LBButtons';
+import Buttons from '../Buttons/Buttons';
 
 class Gallery extends React.Component {
 
@@ -22,10 +22,26 @@ class Gallery extends React.Component {
       });
     });
   }
+
+
+  clickToVote = (e) => {
+    e.preventDefault();
+    console.log(e.target.attributes.id.value);
+
+    axios.put(`http://localhost:8080/gallery/${e.target.attributes.id.value}`).then(response => {
+      console.log(response);
+      this.setState({
+        votes: response.data.votes
+      })
+      
+    }).catch(err => {
+      console.error('Post error', err);
+    })
+  }
   
   displayGallery = () => {
     return this.state.pictures.map((picture) => {
-      return <div className="gallery__picture"><CardPictures {...picture} key={picture.id + picture.title} class={"card-pic__img"} /></div>
+      return <div className="gallery__picture" key={picture.id + picture.id}><CardPictures {...picture} class={"card-pic__img"} onclick={this.clickToVote} /></div>
     })
   }
 
@@ -43,7 +59,7 @@ class Gallery extends React.Component {
         </div>
         <div className="gallery__nav">
           <Link to="/leaderboard" className="gallery__leaderboard">
-            <LBButtons text="LEADERBOARD" />
+            <Buttons text="LEADERBOARD" />
           </Link>
         </div>
       </div>

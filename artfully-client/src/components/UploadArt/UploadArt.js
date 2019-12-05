@@ -4,7 +4,7 @@ import './UploadArt.scss';
 import { Link } from 'react-router-dom';
 import Logo from '../Logo/Logo';
 import PageTitle from '../PageTitle/PageTitle';
-import LBButtons from '../LBButtons/LBButtons';
+import Buttons from '../Buttons/Buttons';
 
 
 
@@ -25,10 +25,10 @@ class UploadArt extends React.Component {
         </div>
         <div className="post__nav">
           <Link to="/leaderboard" className="post__leaderboard">
-            <LBButtons text="LEADERBOARD" />
+            <Buttons text="LEADERBOARD" />
           </Link>
           <Link to="/gallery" className="leaderboard__vote">
-            <LBButtons text="VOTE" />
+            <Buttons text="VOTE" />
           </Link>
         </div>
       </div>

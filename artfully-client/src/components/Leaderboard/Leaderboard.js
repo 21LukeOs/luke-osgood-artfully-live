@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import Logo from '../Logo/Logo';
 import PageTitle from '../PageTitle/PageTitle';
 import CardPictures from '../CardPictures/CardPictures';
-import LBButtons from '../LBButtons/LBButtons';
+import Buttons from '../Buttons/Buttons';
 
 
 
@@ -27,7 +27,7 @@ class Leaderboard extends React.Component {
   
   displayLeaders = () => {
     return this.state.pictures.map((picture) => {
-      return <div className="leaderboard__picture"><CardPictures {...picture} key={picture.id + picture.title} class={"card-pic__img1"} /></div>
+      return <div className="leaderboard__picture" key={picture.id + picture.title}><CardPictures {...picture} class={"card-pic__img1"} /></div>
     })
   }
 
@@ -45,10 +45,10 @@ class Leaderboard extends React.Component {
         </div>
         <div className="leaderboard__nav">
           <Link to="/post" className="leaderboard__post">
-            <LBButtons text="POST" />
+            <Buttons text="POST" />
           </Link>
           <Link to="/gallery" className="leaderboard__vote">
-            <LBButtons text="VOTE" />
+            <Buttons text="VOTE" />
           </Link>
         </div>
       </div>

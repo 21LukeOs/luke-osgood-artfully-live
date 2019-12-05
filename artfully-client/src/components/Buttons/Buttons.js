@@ -1,5 +1,5 @@
 import React from 'react';
-import './LBButtons.scss';
+import './Buttons.scss';
 
 
 class LBButtons extends React.Component {

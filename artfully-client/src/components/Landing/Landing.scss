@@ -29,7 +29,7 @@
   }
 
   &__sub-title {
-    font-size: 24px;
+    font-size: 20px;
     font-family: 'Rock Salt';
     text-shadow: 1px 1px 2px white, 0 0 1em white, 0 0 0.2em white;
     border-top: 3px solid white;
@@ -38,10 +38,22 @@
 
   }
 
+  &__para {
+    font-family: 'Raleway';
+    color: $color3;
+    font-size: 18px;
+
+    @include tablet() {
+      width: 80%;
+      margin: 30px auto;
+    }
+  }
+
   &__tut {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     font-family: 'Raleway';
 
     @include tablet() {
@@ -59,12 +71,17 @@
 
   &__bid-vote {
     width: 100px;
-    color: white;
+    color: $color3;
   }
 
-  // &__vote {
-  //   width: 100px;
-  // }
+  &__bid-vote-img {
+    transform: rotate(90deg);
+
+
+    @include tablet() {
+      transform: rotate(0);
+    }
+  }
 
   &__pictures {
 

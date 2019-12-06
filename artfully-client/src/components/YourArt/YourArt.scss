@@ -1,9 +1,8 @@
 @import '../../palette.scss';
 @import '../../mixins.scss';
 
-.post {
-  // height: 100vh;
-
+.your-art {
+  height: 100%;
 
   &__logo {
     width: 240px;
@@ -14,15 +13,22 @@
     text-align: center;
   }
 
-  &__post-pic {
+  &__picture {
+
+    @include tablet() {
+      max-width: 30%;
+    }
+  }
+
+  &__pictures {
     min-height: 60vh;
 
-
-    // @include tablet() {
-    //   display: flex;
-    //   justify-content: space-around;
-    //   align-items: flex-end;
-    // }
+    @include tablet() {
+      display: flex;
+      justify-content: space-around;
+      align-items: flex-end;
+      flex-wrap: wrap;
+    }
   }
 
   &__nav {
@@ -41,9 +47,5 @@
     width: 80%;
     margin-top: 50px;
   }
-
-  &__vote {
-    width: 80%;
-    margin-top: 50px;
-  }
 }
+

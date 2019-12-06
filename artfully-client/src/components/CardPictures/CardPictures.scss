@@ -70,4 +70,10 @@
     box-shadow: .5px .5px 1px yellow, 0 0 .5em yellow, 0 0 0.1em yellow;
     transform: scale(0.995);
   }
+
+  &__img2 {
+    max-width: 100%;
+    border-radius: 20px;
+    box-shadow: 1px 1px 2px red, 0 0 1em red, 0 0 0.2em red;
+  }
 }

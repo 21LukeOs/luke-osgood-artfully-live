@@ -5,11 +5,10 @@ const galleryData = require('../data/gallery.json')
 
 // get location data
 router.get('/', (req, res) => {
-  // console.log(galleryData)
-  // let highToLow = galleryData.sort((a, b) => {
-  //   return a.votes - b.votes
-  res.send(galleryData)
-  })
+  const forSale = galleryData.filter(galleryItem => parseInt(galleryItem.bid, 10) === 0)
+  
+  res.send(forSale)
+})
 
 
 router.put('/:id', (req, res) => {

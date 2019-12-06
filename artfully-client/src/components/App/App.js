@@ -5,6 +5,7 @@ import Landing from '../Landing/Landing';
 import Leaderboard from '../Leaderboard/Leaderboard';
 import Gallery from '../Gallery/Gallery';
 import UploadArt from '../UploadArt/UploadArt';
+import YourArt from '../YourArt/YourArt';
 
 
 class App extends React.Component {
@@ -18,6 +19,7 @@ class App extends React.Component {
           <Route path="/leaderboard" component={Leaderboard} />
           <Route path="/gallery" component={Gallery} />
           <Route path="/post" component={UploadArt} />
+          <Route path="/yourArt" component={YourArt} />
         </Switch>
       </BrowserRouter>
       </div>

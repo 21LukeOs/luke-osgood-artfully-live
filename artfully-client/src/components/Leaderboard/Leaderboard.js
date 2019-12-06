@@ -27,11 +27,9 @@ class Leaderboard extends React.Component {
 
   clickToBid = (e) => {
     e.preventDefault();
-    console.log(e.target.attributes.id.value);
     const pictureId = e.target.attributes.id.value;
 
     axios.put(`http://localhost:8080/leaderboard/${pictureId}`).then(response => {
-      console.log(response.data.bid)
       this.setState({
         pictures: this.state.pictures.map((picture) => {
           if (picture.id === pictureId) {
@@ -48,7 +46,7 @@ class Leaderboard extends React.Component {
   
   displayLeaders = () => {
     return this.state.pictures.map((picture) => {
-      return <div className="leaderboard__picture" key={picture.id + picture.title}><CardPictures {...picture} class={"card-pic__img1"} onclick={this.clickToBid} type="Current Bid" number={picture.bid} /></div>
+      return <div className="leaderboard__picture" key={picture.id + picture.title}><CardPictures {...picture} class={"card-pic__img1"} onclick={this.clickToBid} type="Current Bid" number={`: $${picture.bid}`} /></div>
     })
   }
 
@@ -70,6 +68,9 @@ class Leaderboard extends React.Component {
           </Link>
           <Link to="/gallery" className="leaderboard__vote">
             <Buttons text="VOTE" />
+          </Link>
+          <Link to="/yourArt" className="leaderboard__vote">
+            <Buttons text="MY ART" />
           </Link>
         </div>
       </div>

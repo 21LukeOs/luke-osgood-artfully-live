@@ -12,4 +12,11 @@ router.get('/', (req, res) => {
   res.send(topThree)
 })
 
+router.put('/:id', (req, res) => {
+  const galleryItem = galleryData.find(gI => gI.id === req.params.id);
+  let count = galleryItem.bid + 5;
+  galleryItem.bid = count;
+  res.send(galleryItem);
+})
+
 module.exports = router

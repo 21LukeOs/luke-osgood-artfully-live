@@ -23,17 +23,22 @@ class Gallery extends React.Component {
     });
   }
 
-
   clickToVote = (e) => {
     e.preventDefault();
     console.log(e.target.attributes.id.value);
+    const pictureId = e.target.attributes.id.value;
 
-    axios.put(`http://localhost:8080/gallery/${e.target.attributes.id.value}`).then(response => {
-      console.log(response);
+    axios.put(`http://localhost:8080/gallery/${pictureId}`).then(response => {
+      console.log(response.data.votes);
       this.setState({
-        votes: response.data.votes
-      })
-      
+        pictures: this.state.pictures.map((picture) => {
+          if (picture.id === pictureId) {
+            return { ...picture, votes: response.data.votes }
+          } else {
+            return { ...picture }
+          }
+        })
+      })      
     }).catch(err => {
       console.error('Post error', err);
     })
@@ -41,7 +46,7 @@ class Gallery extends React.Component {
   
   displayGallery = () => {
     return this.state.pictures.map((picture) => {
-      return <div className="gallery__picture" key={picture.id + picture.id}><CardPictures {...picture} class={"card-pic__img"} onclick={this.clickToVote} /></div>
+      return <div className="gallery__picture" key={picture.id + picture.id}><CardPictures {...picture} class={"card-pic__img"} type="Votes" number={picture.votes} onclick={this.clickToVote} /></div>
     })
   }
 

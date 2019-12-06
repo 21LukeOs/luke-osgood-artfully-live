@@ -11,7 +11,7 @@ server.use(cors());
 server.use(express.json());
 
 //routes
-server.use('/', leaderboard)
+server.use('/leaderboard', leaderboard)
 server.use('/gallery', galleryRoute)
 
 const port = process.env.PORT || 8080;

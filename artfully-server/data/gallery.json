@@ -8,7 +8,8 @@
     "artist": "Winston",
     "uploader": "blah",
     "image": "https://res.cloudinary.com/dvyvmssx4/image/upload/c_scale,w_1440/v1575338175/artfully/seaside-highway-night_vl8qfs.jpg",
-    "votes": 2
+    "votes": 2,
+    "bid": 0
   },
   {
     "id": "7965763",
@@ -16,7 +17,8 @@
     "artist": "Winston",
     "uploader": "blah",
     "image": "https://res.cloudinary.com/dvyvmssx4/image/upload/c_scale,w_1440/v1575340752/artfully/emerald_f36lmh.jpg",
-    "votes": 0
+    "votes": 0,
+    "bid": 0
   },
   {
     "id": "0987346",
@@ -24,7 +26,8 @@
     "artist": "Winston",
     "uploader": "blah",
     "image": "https://res.cloudinary.com/dvyvmssx4/image/upload/c_scale,w_1440/v1575338199/artfully/winter-highway_fxomss.jpg",
-    "votes": 2
+    "votes": 2,
+    "bid": 0
   },
   {
     "id": "3877345",
@@ -32,7 +35,8 @@
     "artist": "Winston",
     "uploader": "blah",
     "image": "https://res.cloudinary.com/dvyvmssx4/image/upload/c_scale,w_1440/v1575338341/artfully/moon-over-water_lvfvs4.jpg",
-    "votes": 0
+    "votes": 0,
+    "bid": 0
   },
   {
     "id": "2606122",
@@ -40,7 +44,8 @@
     "artist": "Winston",
     "uploader": "blah",
     "image": "https://res.cloudinary.com/dvyvmssx4/image/upload/c_scale,w_1440/v1575340757/artfully/fresh_uy1y0i.jpg",
-    "votes": 0
+    "votes": 0,
+    "bid": 0
   },
   {
     "id": "7901832",
@@ -48,7 +53,8 @@
     "artist": "Winston",
     "uploader": "blah",
     "image": "https://res.cloudinary.com/dvyvmssx4/image/upload/c_scale,w_1440/v1575340766/artfully/glass_l1mlsa.jpg",
-    "votes": 0
+    "votes": 0,
+    "bid": 0
   },
   {
     "id": "1530655",
@@ -56,7 +62,8 @@
     "artist": "Winston",
     "uploader": "blah",
     "image": "https://res.cloudinary.com/dvyvmssx4/image/upload/c_scale,w_1440/v1575340846/artfully/seashore_rkcpjv.jpg",
-    "votes": 2
+    "votes": 2,
+    "bid": 0
   },
   {
     "id": "3714584",
@@ -64,7 +71,8 @@
     "artist": "Winston",
     "uploader": "blah",
     "image": "https://res.cloudinary.com/dvyvmssx4/image/upload/c_scale,w_1440/v1575340866/artfully/summit_ekhbwj.jpg",
-    "votes": 0
+    "votes": 0,
+    "bid": 0
   },
   {
     "id": "1957123",
@@ -72,7 +80,8 @@
     "artist": "Winston",
     "uploader": "blah",
     "image": "https://res.cloudinary.com/dvyvmssx4/image/upload/c_scale,w_1440/v1575340879/artfully/treetop-haze_mni7ez.jpg",
-    "votes": 0
+    "votes": 0,
+    "bid": 0
   },
   {
     "id": "5515852",
@@ -80,6 +89,7 @@
     "artist": "Winston",
     "uploader": "blah",
     "image": "https://res.cloudinary.com/dvyvmssx4/image/upload/c_scale,w_1440/v1575340897/artfully/winding_dtmzss.jpg",
-    "votes": 0
+    "votes": 0,
+    "bid": 0
   }
 ]

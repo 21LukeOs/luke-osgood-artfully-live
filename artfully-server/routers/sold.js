@@ -11,13 +11,10 @@ router.get('/', (req, res) => {
   })
 
   const topThree = highToLow.slice(-3)
-   console.log(topThree)
 
   const idKeys = topThree.map(obj => obj.id)
-  console.log(parseInt(idKeys, 10))
 
-  const sold = galleryData.filter(galleryItem => parseInt(galleryItem.bid, 10) >= 5 && !idKeys.includes(galleryItem.id))
-  // console.log(sold)
+  const sold = galleryData.filter(galleryItem => galleryItem.bid >= 5 && !idKeys.includes(galleryItem.id))
   res.send(sold)  
 })
 

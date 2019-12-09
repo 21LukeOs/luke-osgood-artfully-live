@@ -24,7 +24,7 @@ class Gallery extends React.Component {
   }
 
   clickToVote = (e) => {
-    e.preventDefault();
+    // e.preventDefault();
     const pictureId = e.target.attributes.id.value;
 
     axios.put(`http://localhost:8080/gallery/${pictureId}`).then(response => {

@@ -5,13 +5,14 @@ import { Link } from 'react-router-dom';
 import Logo from '../Logo/Logo';
 import PageTitle from '../PageTitle/PageTitle';
 import Buttons from '../Buttons/Buttons';
+import "react-loader-spinner/dist/loader/css/react-spinner-loader.css"
 
 
 
 class UploadArt extends React.Component {
 
   state = {
-    selectedFile: null,
+    selectedFile: null
   }
 
   fileSelector = e => {
@@ -19,7 +20,7 @@ class UploadArt extends React.Component {
       selectedFile: e.target.files[0]
     })
   }
-  
+
   handleSubmit = (e) => {
     e.preventDefault()
     e.persist()
@@ -33,14 +34,12 @@ class UploadArt extends React.Component {
     }
 
     axios.post('https://api.cloudinary.com/v1_1/dvyvmssx4/image/upload', data).then(response => {
-      console.log(response.data);
       const upData = {
         title: e.target.title.value,
         artist: e.target.artist.value,
         image: `https://res.cloudinary.com/dvyvmssx4/image/upload/c_scale,w_1440/v${response.data.version}/${response.data.public_id}.${response.data.format}`
       }
       axios.post('http://localhost:8080/gallery', upData).then(response => {
-        console.log(response);
         e.target.title.value = '';
         e.target.artist.value = '';
 
@@ -70,7 +69,7 @@ class UploadArt extends React.Component {
               <input type="text" id="artist" name="artist" className="post__upload-artist post__upload-input"  />
             <label htmlFor="file" className="post__upload-file-label post__upload-label" >Image To Upload</label>
             <input type="file" id="file" className="post__upload-file" onChange={this.fileSelector} />
-            <button type="submit" className="post__upload-submit" form="picForm" >Submit</button>
+            <button type="submit" className="post__upload-submit" form="picForm" onClick={this.uploading} >Submit</button>
           </form>
         </div>
         <div className="post__nav">

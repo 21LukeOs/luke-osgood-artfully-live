@@ -7,7 +7,7 @@ const galleryData = require('../data/gallery.json')
 
 // get location data
 router.get('/', (req, res) => {
-  const forSale = galleryData.filter(galleryItem => parseInt(galleryItem.bid, 10) === 0)
+  const forSale = galleryData.filter(galleryItem => parseInt(galleryItem.bid, 10) === 10)
   
   res.send(forSale)
 })
@@ -28,7 +28,7 @@ router.post('/', (request, response) => {
     uploader: "blah",
     image: request.body.image,
     votes: 0,
-    bid: 0
+    bid: 10
   }
   gallery.unshift(newPic)
   response.send(newPic);

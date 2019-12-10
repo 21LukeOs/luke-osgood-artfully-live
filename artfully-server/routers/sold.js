@@ -14,7 +14,7 @@ router.get('/', (req, res) => {
 
   const idKeys = topThree.map(obj => obj.id)
 
-  const sold = galleryData.filter(galleryItem => galleryItem.bid >= 5 && !idKeys.includes(galleryItem.id))
+  const sold = galleryData.filter(galleryItem => galleryItem.bid >= 15 && !idKeys.includes(galleryItem.id))
   res.send(sold)  
 })
 

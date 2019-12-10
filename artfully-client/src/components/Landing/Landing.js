@@ -2,7 +2,7 @@ import React from 'react';
 import './Landing.scss';
 import { Link } from 'react-router-dom';
 import Logo from '../Logo/Logo';
-import PageTitle from '../PageTitle/PageTitle';
+// import PageTitle from '../PageTitle/PageTitle';
 import Buttons from '../Buttons/Buttons';
 import CardPictures from '../CardPictures/CardPictures'
 import blackImg from '../../assets/images/black-img.png';
@@ -43,9 +43,10 @@ class Landing extends React.Component {
         <div className="landing__logo">
           <Logo />
         </div>
-        <div className="landing__title">
+        {/* <div className="landing__title">
           <PageTitle text="Welcome to A . L ." />
-        </div>
+        </div> */}
+        <h1 className="landing__title">Welcome to A . L .</h1>
         <div className="landing__sub-wrap">
           <h2 className="landing__sub-title">Instructions</h2>
         </div>

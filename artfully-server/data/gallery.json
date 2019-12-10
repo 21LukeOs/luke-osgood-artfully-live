@@ -9,7 +9,7 @@
     "uploader": "blah",
     "image": "https://res.cloudinary.com/dvyvmssx4/image/upload/c_scale,w_1440/v1575338175/artfully/seaside-highway-night.jpg",
     "votes": 0,
-    "bid": 0
+    "bid": 10
   },
   {
     "id": "7965763",
@@ -18,7 +18,7 @@
     "uploader": "blah",
     "image": "https://res.cloudinary.com/dvyvmssx4/image/upload/c_scale,w_1440/v1575340752/artfully/emerald.jpg",
     "votes": 0,
-    "bid": 0
+    "bid": 10
   },
   {
     "id": "0987346",
@@ -27,7 +27,7 @@
     "uploader": "blah",
     "image": "https://res.cloudinary.com/dvyvmssx4/image/upload/c_scale,w_1440/v1575338199/artfully/winter-highway.jpg",
     "votes": 0,
-    "bid": 0
+    "bid": 10
   },
   {
     "id": "3877345",
@@ -36,7 +36,7 @@
     "uploader": "blah",
     "image": "https://res.cloudinary.com/dvyvmssx4/image/upload/c_scale,w_1440/v1575338341/artfully/moon-over-water.jpg",
     "votes": 0,
-    "bid": 0
+    "bid": 10
   },
   {
     "id": "2606122",
@@ -45,7 +45,7 @@
     "uploader": "blah",
     "image": "https://res.cloudinary.com/dvyvmssx4/image/upload/c_scale,w_1440/v1575340757/artfully/fresh.jpg",
     "votes": 0,
-    "bid": 0
+    "bid": 10
   },
   {
     "id": "7901832",
@@ -54,7 +54,7 @@
     "uploader": "blah",
     "image": "https://res.cloudinary.com/dvyvmssx4/image/upload/c_scale,w_1440/v1575340766/artfully/glass.jpg",
     "votes": 0,
-    "bid": 0
+    "bid": 10
   },
   {
     "id": "1530655",
@@ -63,7 +63,7 @@
     "uploader": "blah",
     "image": "https://res.cloudinary.com/dvyvmssx4/image/upload/c_scale,w_1440/v1575340846/artfully/seashore.jpg",
     "votes": 0,
-    "bid": 0
+    "bid": 10
   },
   {
     "id": "3714584",
@@ -72,7 +72,7 @@
     "uploader": "blah",
     "image": "https://res.cloudinary.com/dvyvmssx4/image/upload/c_scale,w_1440/v1575340866/artfully/summit.jpg",
     "votes": 0,
-    "bid": 0
+    "bid": 10
   },
   {
     "id": "5515852",
@@ -81,6 +81,6 @@
     "uploader": "blah",
     "image": "https://res.cloudinary.com/dvyvmssx4/image/upload/c_scale,w_1440/v1575340897/artfully/winding.jpg",
     "votes": 0,
-    "bid": 0
+    "bid": 10
   }
 ]

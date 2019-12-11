@@ -62,7 +62,7 @@
     "artist": "Winston",
     "uploader": "blah",
     "image": "https://res.cloudinary.com/dvyvmssx4/image/upload/c_scale,w_1440/v1575340846/artfully/seashore.jpg",
-    "votes": 0,
+    "votes": 1,
     "bid": 10
   },
   {
@@ -71,7 +71,7 @@
     "artist": "Winston",
     "uploader": "blah",
     "image": "https://res.cloudinary.com/dvyvmssx4/image/upload/c_scale,w_1440/v1575340866/artfully/summit.jpg",
-    "votes": 0,
+    "votes": 1,
     "bid": 10
   },
   {
@@ -80,7 +80,7 @@
     "artist": "Winston",
     "uploader": "blah",
     "image": "https://res.cloudinary.com/dvyvmssx4/image/upload/c_scale,w_1440/v1575340897/artfully/winding.jpg",
-    "votes": 0,
+    "votes": 1,
     "bid": 10
   }
 ]

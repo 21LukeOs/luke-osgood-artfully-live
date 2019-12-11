@@ -30,7 +30,7 @@ router.post('/', (request, response) => {
     votes: 0,
     bid: 10
   }
-  gallery.unshift(newPic)
+  gallery.unshift(newPic);
   response.send(newPic);
 })
 
